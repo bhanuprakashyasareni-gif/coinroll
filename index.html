@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coin Roll</title>
+</head>
+<body>
+    <h1>Coin Roll</h1>
+    <h2>Today Date</h2>
+    <h3 id="date"></h3>
+    <form action="" id="coin">
+        <label for="Time">Time:</label><br>
+        <input type="time"  id="Time" required ><br>
+
+        <label for="Cardtype">Card Type: </label><br>
+        <select  id="Cardtype">
+         <option value="atm card">ATM Card</option>
+         <option value="debit card">Debit Card</option>
+         <option value="credit card">Credit Card</option>
+         <option value="prepaid card">Prepaid Card</option>
+        </select><br>
+
+        <label for="Banktype">Bank Type: </label><br>
+        <select id="Banktype">
+        <option value="State Bank of India (SBI)">State Bank of India (SBI)</option>
+     <option value="Bank of Baroda">Bank of Baroda</option>
+  <option value="Bank of India">Bank of India</option>
+  <option value="Bank of Maharashtra">Bank of Maharashtra</option>
+  <option value="Canara Bank">Canara Bank</option>
+  <option value="Central Bank of India">Central Bank of India</option>
+  <option value="Indian Bank">Indian Bank</option>
+  <option value="Indian Overseas Bank">Indian Overseas Bank</option>
+  <option value="Punjab & Sind Bank">Punjab &amp; Sind Bank</option>
+  <option value="Punjab National Bank (PNB)">Punjab National Bank (PNB)</option>
+  <option value="UCO Bank">UCO Bank</option>
+  <option value="Union Bank of India">Union Bank of India</option>
+  <option value="Axis Bank">Axis Bank</option>
+  <option value="Bandhan Bank">Bandhan Bank</option>
+  <option value="CSB Bank">CSB Bank</option>
+  <option value="City Union Bank">City Union Bank</option>
+  <option value="DCB Bank">DCB Bank</option>
+  <option value="Dhanlaxmi Bank">Dhanlaxmi Bank</option>
+  <option value="Federal Bank">Federal Bank</option>
+  <option value="HDFC Bank">HDFC Bank</option>
+  <option value="ICICI Bank">ICICI Bank</option>
+  <option value="IDBI Bank">IDBI Bank</option>
+  <option value="IDFC FIRST Bank">IDFC FIRST Bank</option>
+  <option value="IndusInd Bank">IndusInd Bank</option>
+  <option value="Jammu & Kashmir Bank">Jammu &amp; Kashmir Bank</option>
+  <option value="Karnataka Bank">Karnataka Bank</option>
+  <option value="Karur Vysya Bank">Karur Vysya Bank</option>
+  <option value="Kotak Mahindra Bank">Kotak Mahindra Bank</option>
+  <option value="Nainital Bank">Nainital Bank</option>
+  <option value="RBL Bank">RBL Bank</option>
+  <option value="South Indian Bank">South Indian Bank</option>
+  <option value="Tamilnad Mercantile Bank">Tamilnad Mercantile Bank</option>
+  <option value="YES Bank">YES Bank</option>
+  <option value="AU Small Finance Bank">AU Small Finance Bank</option>
+  <option value="Capital Small Finance Bank">Capital Small Finance Bank</option>
+  <option value="Equitas Small Finance Bank">Equitas Small Finance Bank</option>
+  <option value="ESAF Small Finance Bank">ESAF Small Finance Bank</option>
+  <option value="Jana Small Finance Bank">Jana Small Finance Bank</option>
+  <option value="Shivalik Small Finance Bank">Shivalik Small Finance Bank</option>
+  <option value="slice Small Finance Bank">slice Small Finance Bank</option>
+  <option value="Suryoday Small Finance Bank">Suryoday Small Finance Bank</option>
+  <option value="Ujjivan Small Finance Bank">Ujjivan Small Finance Bank</option>
+  <option value="Unity Small Finance Bank">Unity Small Finance Bank</option>
+  <option value="Utkarsh Small Finance Bank">Utkarsh Small Finance Bank</option>
+  <option value="Airtel Payments Bank">Airtel Payments Bank</option>
+  <option value="Fino Payments Bank">Fino Payments Bank</option>
+  <option value="India Post Payments Bank (IPPB)">India Post Payments Bank (IPPB)</option>
+  <option value="NSDL Payments Bank">NSDL Payments Bank</option>
+  <option value="Jio Payments Bank">Jio Payments Bank</option>
+  <option value="HSBC">HSBC</option>
+  <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+  <option value="DBS Bank India">DBS Bank India</option>
+  <option value="Citibank">Citibank</option>
+  <option value="Deutsche Bank">Deutsche Bank</option>
+  <option value="Barclays Bank">Barclays Bank</option>
+  <option value="Bank of America">Bank of America</option>
+  <option value="J.P. Morgan Chase Bank">J.P. Morgan Chase Bank</option>
+
+        </select><br>
+
+        <label for="Amount">Amount : </label><br>
+        <input type="number" id="Amount" required><br>
+
+        <label for="categories">Categories :</label><br>
+        <select id="categories">
+            <option value="Housing">Housing</option>
+<option value="Utilities & Bills">Utilities &amp; Bills</option>
+<option value="Household Supplies">Household Supplies</option>
+<option value="Groceries">Groceries</option>
+<option value="Dining Out & Delivery">Dining Out &amp; Delivery</option>
+<option value="Daily Commute">Daily Commute</option>
+<option value="Vehicle Upkeep">Vehicle Upkeep</option>
+<option value="Trips & Vacations">Trips &amp; Vacations</option>
+<option value="Medical & Healthcare">Medical &amp; Healthcare</option>
+<option value="Fitness">Fitness</option>
+<option value="Personal Care & Grooming">Personal Care &amp; Grooming</option>
+<option value="Entertainment">Entertainment</option>
+<option value="Subscriptions">Subscriptions</option>
+<option value="Shopping & Apparel">Shopping &amp; Apparel</option>
+<option value="Education">Education</option>
+<option value="Work/Business Expenses">Work/Business Expenses</option>
+<option value="Debt & EMIs">Debt &amp; EMIs</option>
+<option value="Insurance">Insurance</option>
+<option value="Savings & Investments">Savings &amp; Investments</option>
+<option value="Family & Dependents">Family &amp; Dependents</option>
+        <option value="Gifts & Donations">Gifts &amp; Donations</option>
+        <option value="Miscellaneous / Others">Miscellaneous / Others</option>
+        </select><br>
+
+        
+        <label for="Notes">Notes: </label><br>
+         <textarea id="Notes" rows="5" cols="20" placeholder="Enter the reason......"></textarea><br>
+         <h3 id="error"></h3>
+         <input type="submit" value="Add"><input type="reset" value="reset">
+    </form>
+    <a href="./moneymap.html">Money Map </a>
+    <script src="script.js"></script>
+</body>
+</html>
